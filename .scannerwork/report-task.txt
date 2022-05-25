@@ -1,0 +1,6 @@
+projectKey=pagination
+serverUrl=http://localhost:9000
+serverVersion=9.4.0.54424
+dashboardUrl=http://localhost:9000/dashboard?id=pagination
+ceTaskId=AYD7Z7mIw-Yo1BF2eYzg
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYD7Z7mIw-Yo1BF2eYzg

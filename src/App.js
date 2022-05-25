@@ -18,8 +18,8 @@ export default function App() {
 
   return (
     <>
-    <h1> User Details Dump</h1>
-      <table >
+      <h1> User Details Dump</h1>
+      <table>
         <thead>
           <tr>
             <th>ID</th>
@@ -30,9 +30,9 @@ export default function App() {
           </tr>
         </thead>
         <tbody>
-          {currentTableData.map(item => {
+          {currentTableData.map((item) => {
             return (
-              <tr>
+              <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.first_name}</td>
                 <td>{item.last_name}</td>
@@ -44,29 +44,16 @@ export default function App() {
         </tbody>
       </table>
 
-      
       <Pagination
         className="pagination-bar"
         currentPage={currentPage}
         totalCount={data.length}
         pageSize={PageSize}
-        onPageChange={page => setCurrentPage(page)}
+        onPageChange={(page) => setCurrentPage(page)}
       />
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -93,8 +80,3 @@ export default function App() {
 // }
 
 // export default App;
-
-
-
-
-
